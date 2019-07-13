@@ -24,33 +24,45 @@
 		<li>灰太狼</li>
 	</ul>
 
-    <p align="center">表格标签是一个四方块盒子 &lttr&gt 行标签 &ltth&gt 表头标签 &lttd&gt 单元格标签</p>
+    <p>表格标签是一个四方块盒子 &lttr&gt 行标签 &ltth&gt 表头标签 &lttd&gt 单元格标签</p>
+    <p>表格结构，&ltthead&gt  &lttbody&gt 只是划分结构，不显示。  </p>
+
+    <p>表格标题标签  &ltcaption&gt 定义表格标题</p>
+    <p>跨行合并单元格 用rowspan属性； 跨列合并单元格 用colspan属性</p>
 	<table width="500" height="300", border="1" cellspacing="0" cellpadding="5" align="center">
-		<tr>  <!-- 行标签 -->
+        <caption>新华三学生表</caption>
+
+		<thead>
+		    <tr>  <!-- 行标签 -->
 			<th>姓名</th>  <!-- 表头标签 -->
 			<th>年龄</th>
 			<th>性别</th>
-		</tr>
-		<tr>
-			<td>森森</td>   <!-- 单元格标签 -->
-			<td>18</td>
-			<td>男</td>
-		</tr>
-		<tr>
-			<td>春春</td>
-			<td>16</td>
-			<td>女</td>
-		</tr>
-		<tr>
-			<td>飞飞</td>
-			<td>19</td>
-			<td>男</td>
-		</tr>
-		<tr>
-			<td>杉杉</td>
-			<td>16</td>
-			<td>女</td>
-		</tr>
+		</tr>	
+		</thead>
+		
+		<tbody>
+		    <tr>
+			    <td>森森</td>   <!-- 单元格标签 -->
+			    <td>18</td>
+			    <td rowspan="2">男</td>  <!-- 跨行合并单元格 用rowspan属性-->
+		    </tr>
+		    <tr>
+			    <td>飞飞</td>
+			    <td>19</td>
+			    <!-- <td>男</td> -->
+		    </tr>
+		    <tr>
+			    <td>春春</td>
+			    <td>16</td>
+			    <td>女</td>
+		    </tr>
+		    <tr>
+			    <td>杉杉</td>
+			    <td colspan="2">16</td>   <!-- 跨列合并单元格 用colspan属性-->
+			    <!-- <td>女</td> -->
+		    </tr>	
+		</tbody>
+		
 	</table>
 </body>
 </html>
