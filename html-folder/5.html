@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be Better Man</title>
+</head>
+<body>
+	<p>表单学习， 表单的目的是收集用户信息。</p>
+	<p>input是个单标签 &ltinput /&gt ， input可以看做是变色龙，可以通过type属性来变换形状。</p>
+    <hr />
+
+    <!-- type=text 文本框 value控件中的默认文本值 -->
+    <p>用户名:<input type="text" value="啦啦啦" /> </p>
+    <!-- type=password 密码框 maxlength控件允许输入的最多字符数-->
+    <p>密　码:<input type="password" maxlength="6" /> </p>
+
+ 
+    用户名: <input type="text" /> <br />
+    密　码: <input type="password" /> <br />
+    <!-- type=radio 单选框 name属性 相同的name值代表同一组 checked属性 定义选择控件默认被选中的项。 -->
+    性　别: <input type="radio" name="sex" checked="checked" /> 男 
+           <input type="radio" name="sex" /> 女<br />
+    <!-- type=checkbox 复选框  可以同时选择多个-->
+    爱　好: <input type="checkbox" name="hobby" checked="checked" /> 篮球 
+           <input type="checkbox" name="hobby" /> 足球 
+           <input type="checkbox" name="hobby" /> 羽毛球 <br />
+    <!-- 普通按钮 value值对应默认文本值 -->
+    搜　索:<input type="button" value="搜索" /> <br />
+    <!-- 提交按钮 -->
+    <input type="submit" value="提交表单" /> 
+    <!-- 重置表单 -->
+    <input type="reset" value="重置表单" /> <br />
+    <!-- 图像按钮 专有属性src-->
+    <input type="image" src="../images/image_button.jpg" /> <br />
+
+    <!-- 文件按钮 -->
+    上传头像:
+    <input type="file" />
+</body>
+</html>
