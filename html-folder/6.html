@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A BetterMan</title>
+</head>
+<body>
+	<h2>学习了三个域</h2>
+	<ol>
+		<li>文本域 textarea 留言的</li>
+		<li>文件域 input type="file" 上传文件的</li>
+		<li>表单域 form 收集表单控件信息 并且提交的</li>
+	</ol>
+
+	<h2>表单域</h2>
+	<form action="demo.php" method="post">
+		<p>用户名：<input type="text" name="username" /></p>
+		<p>密　码：<input type="password" name="pwd" /></p>
+
+        <input type="submit" value="提交" />
+        <input type="reset" value="重置" />
+
+	</form>
+	
+	<ol>
+		<li>get 速度快 但是 会显示表单里面的内容，不安全，不能做密码提交</li>
+		<li>post 速度慢一些 但是 不会显示表单内容，安全一些</li>
+	</ol>
+
+</body>
+</html>
