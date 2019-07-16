@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+</head>
+<body>
+	<h4>html5新增表单属性</h4>
+
+	<fieldset>
+		<legend>表单</legend>
+		<form>
+			用户名：<input type="text" placeholder="请输入用户名" autofocus /> <br />
+			上传头像：<input type="file" multiple />
+		</form>
+		<br />
+
+		<p>自动记录完成  autocomplete </p>
+		<ol>
+			<li>首先需要提交按钮</li>
+			<li>这个表单必须给它名字，name=“userName”</li>
+		</ol>
+		
+		<form action="">
+			姓名：<input type="text" name="userName" autocomplete />
+			<input type="submit" />
+		</form>
+
+        <ul>
+        	<li>必填项 required</li>
+        	<li>accesskey  快捷进入某个input组件  当前为 Alt + s </li>
+        </ul>
+		昵称：<input type="text" required accesskey="s" />
+	</fieldset>
+</body>
+</html>
