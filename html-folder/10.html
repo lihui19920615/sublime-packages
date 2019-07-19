@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+	<style type="text/css">
+		p {
+			font-size: 26px;
+			color: pink;
+			font-family: "\5b8b\4f53";  /*宋体的Unicode码\u5b8b\u4f53*/
+		}
+		h4 {
+			color: purple;
+
+			/*
+			font-size: 18px;
+			font-family: "宋体";  /*字体一般推荐使用宋体(SimSun、\5B8B\4F53)和微软雅黑(Microsoft YaHei、\5FAE\8F6F\96C5\9ED1)
+			font-style: italic;   /*italic 让字体倾斜*/
+			
+			font: italic bold 18px "\5B8B\4F53";   /*font综合写法 更简洁*/
+		}
+		div {
+			color: orange;
+			font-size: 20px;
+			font-family: "\5FAE\8F6F\96C5\9ED1";  /*微软雅黑的Unicode码\5FAE\8F6F\96C5\9ED1*/
+		}
+		span {
+			font-weight: bold; /*字体加粗 700 等价于 bold  , 400等价于normal,但是我们更喜欢用数字来表示。*/
+		}
+		em {
+			font-style: normal; /*经常使用的方式是：让斜体变得不倾斜 ; 字体风格*/
+		}
+	</style>
+</head>
+<body>
+	<p>我们的视频支持 ogg mp4 webM 三种视频格式</p>
+	<h4>程序员的一天</h4>
+	<video controls autoplay>
+		<source src="../video/程序员的一天.mp4" />
+		<!-- <source src="1.ogg" /> -->
+	</video>
+
+	<!-- 我要对css下手了 -->
+	<h4><em>css</em> 学习之旅~</h4>
+	<div>
+		我们以后尽量只写unicode字体，<span>写宋体和微软雅黑</span>。 \5FAE\8F6F\96C5\9ED1  、 \5B8B\4F53
+	</div>
+    <p><em>css</em>是没有语义的，但是有很多选项。</p>
+	
+	<p><em>css</em>注释 /* <em>css</em>注释 */  快捷键一样  ctrl + shift + / </p>
+
+    <p>font 综合设置字体样式 。 {font: font-style font-weight font-size/line-height font-family;}</p>
+    <p>必须按顺序书写，不能更换顺序，各个属性以空格隔开。</p>
+    <p>必须保留font-size和font-family属性, 其余都可以省略。</p>
+
+</body>
+</html>
