@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>To Be A Better Man</title>
-	<style type="text/css" media="screen">
+	<style>
 		p {
 			color: #d697f0;
 			font:  700 22px  "\5B8B\4F53";
@@ -72,6 +72,16 @@
         	color: green;
         	font-weight: 700;
         }
+
+        li:first-child {   /*选择第一个孩子*/
+        	color: skyblue;
+        }
+        li:last-child {     /*最后一个孩子*/
+        	color: green;
+        }
+        li:nth-child(3) {    /*选择第3个孩子 n代表第几个的意思*/
+        	color: purple;
+        }
 	</style>
 </head>
 <body>
@@ -120,5 +130,18 @@
     <div>
     	<a href="#">抢购</a>
     </div>
+
+    <p>实际运用中，我们只用到 鼠标移动到链接上 a:hover {} 即可。</p>
+
+    <p>结构(位置)伪类选择器（CSS3）</p>
+	
+	<ul>
+		<li>第一个孩子</li>
+		<li>第二个孩子</li>
+		<li>第三个孩子</li>
+		<li>第四个孩子</li>
+		<li>第五个孩子</li>
+		<li>第六个孩子</li>
+	</ul>
 </body>
 </html>
