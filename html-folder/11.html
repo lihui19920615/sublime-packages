@@ -9,8 +9,7 @@
 			font:  700 22px  "\5B8B\4F53";
 		}
 		span {
-			color: #ff7600;
-			font-style: italic;
+			font-size: 40px;
 		}
 		h3 {
 			color: #f2798e;
@@ -24,7 +23,55 @@
 		.ouwen {
 			color: green;
 		}
+        .c-blue {
+        	color: blue;
+        }
+        .c-red {
+        	color: red;
+        }
+        .c-orange {
+        	color: orange;
+        }
+        .c-green {
+        	color: green;
+        }
+        .font20 {
+        	font-size: 20px;
+        }
+        .font24 {
+        	font-size: 24px;
+        }
+        .fontWeight {   /*类选择器是可以重复多次使用的，类似于 人名*/
+        	font-weight: 700;
+        }
+        #c-pink {       /*id类似身份证号是唯一的， 只允许使用一次。*/
+        	color: pink;
+        }
 
+        * {              /*  *指的是所有的标签  */
+        	font-family: "\5FAE\8F6F\96C5\9ED1";
+        }
+
+        a:link {         /*未访问的链接*/
+        	font-size: 16px;
+        	color: gray;
+        	font-weight: 700;
+        }
+        a:visited {      /*已访问的链接*/
+        	font-size: 16px;
+        	color: orange;
+        	font-weight: 700;
+        }
+        a:hover {        /*鼠标移动到链接上*/
+        	font-size: 16px;
+        	color: red;
+        	font-weight: 700;
+        } 
+        a:active {       /*选定的链接 当我们点击别松开鼠标时显示的状态。*/
+        	font-size: 16px;
+        	color: green;
+        	font-weight: 700;
+        }
 	</style>
 </head>
 <body>
@@ -39,5 +86,39 @@
 	<div class="kobe">科比</div>
 	<div class="james">詹姆斯</div>
 	<div class="ouwen">欧文</div>
+
+	<p>css命名规范，尽量不要用下划线_ ，不要用纯数字和纯汉字命名类。 尽量使用英文字母来表示。</p>
+	<span class="c-blue">G</span>
+	<span class="c-red">o</span>
+	<span class="c-orange">o</span>
+	<span class="c-blue">g</span>
+	<span class="c-green">l</span>
+	<span class="c-red">e</span>
+
+	<p>多类名选择器</p>
+	<div class="c-red font20">亚瑟</div>
+	<div class="c-orange font24 fontWeight">安其拉</div>
+	<div>刘备</div>
+
+	<p>id选择器 。 id类似身份证号是唯一的， 只允许使用一次。</p>
+	<div id="c-pink">张三</div>
+
+	<p>通配符选择器 * 指的是所有的标签。</p>
+
+    <p>伪类选择器： 用于向某些选择器添加特殊的效果。 伪类用 两个点 就是 冒号：比如 ：link{}</p>
+    <p>链接伪类选择器</p>
+    <ul>
+    	<li>:link  未访问的链接</li>
+    	<li>:visited  已访问的链接</li>
+    	<li>:hover  鼠标移动到链接上</li>
+    	<li>:active  选定的链接  </li>
+    </ul>
+    <p>顺序按照 lvha</p>
+    <div>
+         <a href="#">秒杀</a>
+    </div>
+    <div>
+    	<a href="#">抢购</a>
+    </div>
 </body>
 </html>
