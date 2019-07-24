@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+	<style>
+		/*li:first-child {
+			color: deeppink;
+		}
+		li:last-child {
+			color: pink;
+		}*/
+		/*li:nth-child(odd) {
+			color: purple;
+		}
+		li:nth-child(even) {
+			color: skyblue;
+		}*/
+		/*li:nth-child(2n + 1) {
+			color: orange;
+		}*/
+		li:nth-last-child(2n) {
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<h3>结构伪类（:）选择器</h3>
+	<p>:first-child 选取属于其父元素的首个子元素的指定选择器</p>
+	<p>:last-child 选取属于其父元素的最后一个子元素的指定选择器</p>
+	<p>:nth-child(n) 匹配属于其父元素的第N个子元素，不论元素的类型 even偶数 或者 odd奇数。 
+	如果用公式， n 从0开始。 2n就是0,2,4,6 ； 3n就是0,3,6,9 ；</p>
+	<p>:nth-last-child(n) 选择器匹配属于其元素的第N个子元素的每个元素，不论元素的类型，从最后一个子元素开始计数。
+	n可以是数字、关键词或公式。</p>
+	<ul>
+		<li>第一个孩子</li>
+		<li>第二个孩子</li>
+		<li>第三个孩子</li>
+		<li>第四个孩子</li>
+		<li>第五个孩子</li>
+		<li>第六个孩子</li>
+		<li>第七个孩子</li>
+		<li>第八个孩子</li>
+	</ul>
+
+</body>
+</html>
