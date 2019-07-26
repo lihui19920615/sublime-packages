@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+	<style>
+		div {
+			line-height: 24px;
+		}
+	</style>
+	<link rel="stylesheet" href="../css-folder/1.css" />
+</head>
+<body>
+	<ul>
+		<li>
+			行内式（内联样式） <br/><br/>
+			<em>书写方便，权重高， 没有实现样式和结构相分离  控制一个标签。</em>
+			<div style="color: #f00; font-size: 18px;">通过标签的style属性来设置元素的样式。 </div>
+		</li>
+		<li>
+			内部样式表   <br/><br/>
+			<em>部分结构和样式分离  控制一个页面。</em>
+			<div>内嵌式是将CSS代码集中写在HTML文档的head头部标签中，并且用style标签定义。</div>
+			<div>语法中，style标签一般位于head标签中title标签之后，也可以把它放在HTML文档的任何地方。</div>
+			<div>type="text/css" 在html5中可以省略，写上也比较符合规范，所以这个地方可以写也可以省略。</div>
+		</li>
+		<li>
+			外部样式表（外链式）  <br/><br/>
+			<em>完全实现结构和样式分离  需要引入  强烈推荐！ 控制整个站点。</em> 
+			<div class="demo">链入式是将所有的样式放在一个或多个以.css为扩展名的外部样式表文件中，通过link标签将外部样式表文件链接到
+			HTML文档中。</div>
+			<div>注意： link是个单标签。  href="css文件的路径" type="text/css" rel="stylesheet"</div>
+			<div>link标签就是把外面的css引入到当前的html页面中，就是css和html文件的桥梁。</div>
+		</li>
+	</ul>
+</body>
+</html>
