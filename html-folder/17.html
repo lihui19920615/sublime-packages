@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+	<style>
+		div {
+			font-size: 20px;
+		}
+		div.singer {  /* 交集选择器 */
+			color: pink;    /* 既是div又是 .singer */
+		}
+		div.actor {
+			color: deeppink;
+		}
+		
+		p,h3,.song {   /* 并集选择器 */
+			color: orange;
+		}
+
+		/* div ul li {    后代选择器 标签之间空格隔开
+			color: purple;
+		} */
+
+		.nav ul li {   /* 后代选择器 嵌套关系 标签之间空格隔开*/
+			color: purple;
+		}
+
+		.myItem > li {
+			color: gray;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="singer">刘德华</div>
+	<div class="actor">周星驰</div>
+	<div class="actor">梁朝伟</div>
+
+	<p>橘子</p>
+	<p>桃子</p>
+	<p>火龙果</p>
+	<h3>西红柿</h3>
+	<h3>黄瓜</h3>
+	<h3>土豆</h3>
+	<span class="song">小苹果</span>
+
+	<p>后代选择器， 嵌套关系，标签之间空格隔开。</p>
+	<div class="nav">
+		<ul>
+			<li>导航</li>
+			<li>预览</li>
+			<li>联系</li>
+		</ul>
+	</div>
+
+	<div>
+		<ul>
+		<li>百度</li>
+		<li>新浪</li>
+		<li>优酷</li>
+		</ul>	
+	</div>
+
+
+	<p>子元素选择器  >  子指的是亲儿子， 孙子、重孙子不算。</p>
+	<ul class="myItem">
+		<li>
+			一级菜单
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+	</ul>
+	
+</body>
+</html>

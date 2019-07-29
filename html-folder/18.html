@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+	<style>
+		li {
+			color: blue;
+		}
+
+		/* .item li {   后代选择器
+			color: purple;
+		} */
+
+		.item > li {    /* 子元素选择器  > 指的是亲儿子 */
+			color: deeppink;
+		}
+	</style>
+</head>
+<body>
+	<h3>子元素选择器</h3>
+	<ul class="item">
+		<li>一级菜单
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+		<li>
+			一级菜单
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+		<li>
+			一级菜单
+			<ul>
+				<li>二级菜单</li>
+				<li>二级菜单</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
