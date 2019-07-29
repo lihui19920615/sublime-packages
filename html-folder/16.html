@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>To Be A Better Man</title>
+	<style>
+		div {
+			background-color: pink;
+			width: 100px;
+			height: 100px;
+			display: inline;  /* 块级标签转换为行内标签模式 */
+		}
+		span {
+			background-color: purple;
+			display: block;   /* 行内标签模式转换块级标签 */
+			width: 100px;
+			height: 100px;
+		}
+		input {
+			width: 100px;
+			height: 100px;
+		}
+		a {
+			width: 80px;
+			height: 30px;
+			background-color: deeppink;
+			display: inline-block;    /* 行内标签模式转换行内块标签模式 */
+		}
+	</style>
+</head>
+<body>
+	<p>块级元素（block-level），每个块元素通常都会独自占据一整行或多整行，可以对其设置宽度、高度、对齐等属性，常用于网页布局和网页结构的搭建。</p>
+	<p>常见的块元素有 h1-h6 p div ul ol li 等，其中&ltdiv&gt标签是最典型的块元素。 非常符合布局。</p>
+	<h3>块级元素的特点：</h3>
+	<ul>
+		<li>总是从新行开始</li>
+		<li>高度、行高、外边距以及内边距都可以控制。</li>
+		<li>宽度默认是容器的100%</li>
+		<li>可以容纳内联元素和其他块元素</li>
+	</ul>
+	<p>只有文字才能组成段落，因此p里面不能放块级元素，同理还有这些标签h1-h6、dt，它们都是文字类块级标签，里面不能放其他块级元素。</p>
+
+	<div>123</div><p>456</p>
+	<div>
+		<div>abc</div>
+	</div>
+
+	<p>行内元素（inline-level），行内元素（内联元素）不占有独立的区域，仅仅靠自身的字体大小和图像尺寸来支撑结构，一般不可以设置宽度，高度，对齐等属性，常用于控制页面中文本的样式。</p>
+	<p>常见的行内元素有 a strong b em i del s ins u span 等，其中&ltspan&gt标签最典型的行内元素。</p>
+
+	<h3>行内元素的特点：</h3>
+	<ul>
+		<li>和相邻行内元素在一行上。</li>
+		<li>高、宽无效，但水平方向的padding和margin可以设置，垂直方向的无效。</li>
+		<li>默认宽度就是它本身内容的宽度。</li>
+		<li>行内元素只能容纳文本或其他行内元素。 （a特殊）</li>
+	</ul>
+
+	<span>qwe</span>
+	<span>asd</span>
+	<span>zxcvbnm</span>
+
+
+	<h3>块级元素和行内元素区别，重点记忆。</h3>
+
+	<p>行内块元素（inline-block），在行内元素中有几个特殊的标签 img input td，可以对它们设置宽高和对齐属性。</p>
+
+	<input type="text" /><input type="text" /><input type="text" />
+	<h3>行内块元素的特点：</h3>
+	<ul>
+		<li>和相邻行内元素（行内块）在一行上，但是之间会有空白间隙。</li>
+		<li>默认宽度就是它本身内容的宽度。</li>
+		<li>高度、行高、外边距以及内边距都可以控制。</li>
+	</ul>
+
+
+	<p>显示模式转换</p>
+	<div>iop</div>
+	<div>jkl</div>
+	<div>bnm</div>
+	<span>987</span>
+	<span>654</span>
+	<span>321</span>
+	<a href="#">123</a><a href="#">123</a>
+</body>
+</html>
