@@ -4,6 +4,10 @@
 	<meta charset="UTF-8">
 	<title>To Be A Better Man</title>
 	<style>
+		body {
+			background-color: #ccc;
+		}
+
 		.site-r a {
 			color: red;
 		}
@@ -19,6 +23,35 @@
 		.nav > ul > li > a {  /* 子元素选择器 */
 			color: green;
 		}
+
+		a[title] {    /* 属性选择器用中括号来表示 */
+			color: red;
+		}
+		input[type=text] {    /* 属性等于value */
+			color: blue;
+		}
+		div[class^=font] {    /* class^=font 表示font开始位置就行了 */
+			color: pink;
+		}
+		div[class$=footer] {  /* class$=footer 表示footer结束位置就行了 */
+			color: deeppink;
+		}
+		div[class*=tao] {     /* class*=tao 表示tao在任意位置都可以 */
+			color: green;
+		}
+
+		/* 伪元素选择器 CSS3 */
+		p::first-letter {     /* 文本的第一个字或则第一个单词 */
+			color: red;
+			font-size: 30px;
+		}
+		p::first-line {           /* 文本第一行 */
+			color: green;
+		}
+		p::selection {             /* 当我们选中文字的时候可以变化的样式 */
+			color: pink;
+		}
+
 	</style>
 </head>
 <body>
@@ -43,5 +76,33 @@
 		<div class="site-l">左侧导航栏</div>
 		<div class="site-r"><a href="#">登录</a></div>
 	</div>
+
+	<h3>属性选择器：选取标签带有某些特殊属性的选择器,称为属性选择器。 用中括号来表示。</h3>
+	<a href="#" title="我是百度">百度</a>
+	<a href="#" title="我是新浪">新浪</a>
+	<a href="#">网易</a>
+	<a href="#">土豆</a>
+	<br />
+	<input type="text" value="请输入姓名" />
+	<input type="text" value="请输入年龄" />
+	<input type="submit" />
+	<input type="reset" />
+	<br /><br />
+
+	<div class="font12">属性选择器</div>
+	<div class="font16">属性选择器</div>
+	<div class="font24">属性选择器</div>
+	<div class="sub-footer">属性选择器</div>
+	<div class="jd-footer">属性选择器</div>
+	<div class="news-tao-nav">属性选择器</div>
+	<div class="news-tao-header">属性选择器</div>
+	<div class="tao-header">属性选择器</div>
+
+
+	<h3>伪元素选择器  :: 双冒号使用</h3>
+	<p>英语词汇freestyle，你看这个碗它又大又圆，就像这个面它又大又宽。 啦啦啦啦~ </p>
+	<p>在元素内部的开始位置和结束位置创建一个元素，该元素为行内元素，且必须要结合content属性使用。</p>
+	<p>CSS3的规范里“：”用来表示伪类，"::"用来表示伪元素。</p>
+
 </body>
 </html>
